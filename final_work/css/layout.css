@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+.style1{
+	width: 800px;   /*元素宽度*/
+	height: 100px;  /*元素高度*/
+	margin: 0px auto;   /*元素外边距，auto为零是让其处于父元素居中位置*/
+	margin-bottom: 20px;   /*元素下边距*/
+	border: 1px solid#96C2F1;  /*元素边框，solid为实线*/
+	background-color: #EFF7FF   /*元素背景色*/
+}
+.style2{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#9BDF70;
+	background-color: #F0FBEB
+}
+.style3{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#BBE1F1;
+	background-color: #EEFAFF
+}
+.style4{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#CCEFF5;
+	background-color: #FAFCFD
+}
+.style5{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#FFCC00;
+	background-color: #FFFFFf
+}
+.style6{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#92B0DD;
+	background-color: #FFFFFf
+}
+
+.style7{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#A9C9E2;
+	background-color: #E8F5FE
+}
+.style8{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#E3E197;
+	background-color: #FFFFDD
+}
+.style9{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#ADCD3C;
+	background-color: #F2FDDB
+}
+.style10{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#F8B3D0;
+	background-color: #FFF5FA
+}
+.style11{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#D3D3D3;
+	background-color: #F3FAFF
+}
+.style12{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#BFD1EB;
+	background-color: #F3FAFF;
+}
+.style13{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#FFDD99;
+	background-color: #FFF9ED;
+}
+.style14{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#CACAFF;
+	background-color: #F7F7FF
+}
+.style15{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#A5B6C8;
+	background-color: #EEF3F7
+}
+.style16{
+	width: 800px;
+	height: 100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	border: 1px solid#CEE3E9;
+	background-color: #F1F7F9
+}
+/*
+<div class="style1"><p>1</p></div>
+<div class="style2"><p>2</p></div>
+<div class="style3"><p>3</p></div>
+<div class="style4"><p>4</p></div>
+<div class="style5"><p>5</p></div>
+<div class="style6"><p>6</p></div>
+<div class="style7"><p>7</p></div>
+<div class="style8"><p>8</p></div>
+<div class="style9"><p>9</p></div>
+<div class="style10"><p>10</p></div>
+<div class="style11"><p>11</p></div>
+<div class="style12"><p>12</p></div>
+<div class="style13"><p>13</p></div>
+<div class="style14"><p>14</p></div>
+<div class="style15"><p>15</p></div>
+<div class="style16"><p>16</p></div>
+*/

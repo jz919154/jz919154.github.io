@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/photo_wall.css">
+	<link rel="stylesheet" type="text/css" href="css/basic_layout.css">
+	<link rel="stylesheet" type="text/css" href="css/spikes_separator-1.css">
+<meta charset="utf-8">
+<title>dipping_material</title>
+	<style >
+		*, ::before, ::after {/*通配符对所有标签适用*/
+			box-sizing: border-box;
+		}
+		*{
+			margin: 0;/*外边距*/
+			padding: 0;/*内边距*/
+		}
+		.nav {/*导航栏*/
+			display: block;
+			padding: 10px 60px;/*上下填充，左右填充*/
+			padding-top: 0;
+			margin-left: 500px;/*距左边距的距离*/
+		}
+		.top_container {
+			display: flex;
+			position: relative;
+            margin: 0px auto;
+            background: rgb(44, 62, 80);
+            padding: 16px 0px;
+            width: 100%;
+            z-index: 10;/*优先级*/
+		}
+		.link_text {
+			color: rgba(255, 255, 255, 0.8);/*透明度0.8*/
+		}
+		body{
+			color: #5B6F82;
+			font-size: 1rem;
+			font-family: "Lato", sans-serif;
+			hyphens: manual;/*英文跨越多行时只有存在建议换行符时才会换行*/
+			line-height: 1.2;/*给行内容设置高度范围*/
+		}
+		div {
+			display: block;
+		}
+		a {
+			color: #5B6F82;/*链接的字体颜色*/
+			text-decoration: underline;/*链接带下划线*/
+		}
+		ul {/*无序列表*/
+			list-style-type: none;
+		}
+		a:link,a:visited {/*未访问的，已访问的链接样式*/
+			display: block;
+			font-weight: bold;
+			color: #f4f7f7;
+			background-color: #7f9eb2;
+			box-shadow: 10px 10px 15px #f4f7f7;/*添加阴影*/
+			width: 200px;
+			padding: 10px;
+			text-align: center;/*文本对齐方式*/
+			text-decoration: none;
+			text-transform: uppercase;/*文本转换方式，此处大写*/
+		}
+		a:hover {/*鼠标悬停时的链接样式*/
+			background-color: #aacfd0;
+		}
+		a:active {/*鼠标点击时的链接样式*/
+			background-color: #79a8a9;
+		}
+		li {
+			float: left;/*左浮动*/
+		}
+
+		#words {
+			color: #79a8a9;
+			font-family: NSimSun;
+			background-color:  #2c3e50;
+		}
+		#poem1 {
+			margin-left: 700px;
+			text-align: center;
+			width: 900px;
+			height: 147px;
+			padding-top: 20px;
+			font-family: NSimSun;
+			color: #79a8a9;
+			flex-grow: 0;
+			}
+		hr{
+			width:100%;
+			height:3px;
+			background-color:#1f4e5f ;
+			border: 0;
+			}
+
+		/* 即时备忘录：
+		span标签无特殊意义，可以用span将一部分文字独立出来而设置独立的样式
+		&nbsp 是空格符，<br>是换行符
+		*/
+	</style>
+</head>
+<body >
+	<div id="words">
+		<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大多数美食都是不同食材组合碰撞产生的裂变性奇观<br>
+				&nbsp;若以人情世故来看食材的相逢<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有的是让人叫绝的天作之和<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有的是叫人动容的邂逅偶遇<br>
+		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有的是令人击节的相见恨晚</h3>
+	</div>
+
+	<div class="top_container">
+		<nav class="nav">
+			<ul>
+				<li><a href="home.html"><span class="link_text">首页</span></a></li>
+				<li><a href="dipping_material.html"><span class="link_text">原料详情</span></a></li>
+				<li><a href="recipe.html"><span class="link_text">蘸料配方</span></a></li>
+				<div class="dropdown">
+					<li><span class="link_text"><a href="recipe.html" class="dropbtn">蘸料推荐</a></span>
+						<div class="dropdown-content">
+							<a href="recommend_1.html">川系火锅蘸料推荐</a>
+							<a href="recommend_2.html">粤系火锅蘸料推荐</a>
+							<a href="recommend_3.html">北派火锅蘸料推荐</a>
+						</div>
+					</li>
+				</div>
+			</ul>
+		</nav>
+	</div>
+	
+	<section class="spikes">
+		<div id="poem">			
+			<ul>
+				<li>
+					<h2>好吃的火锅</h2>
+					<h2>需要优秀的食材</h2>
+					<h2>更需要一碗提香增味的好蘸料</h2>
+				</li>
+				<li>
+					<h2>Delicious Hot Pot</h2>
+					<h2>The need for excellent ingredients</h2>
+					<h2>But also a good bowl of Tixiang flavor-enhancing dip</h2>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<br><br><br><br>
+	<hr>
+	<h2>&nbsp;&nbsp;蘸 料 详 情</h2>
+	<div class="container1">
+		<div class="banner">
+				<div class="banner-grid">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/xiancai.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>香菜（学名：Coriandrum sativum L.）别名胡荽、香荽。为伞形科植物鞠荽的全草，伞形花笠，芫荽属，一、二年生草本植物，是人们熟悉的提味蔬菜，状似芹，叶小且嫩，茎纤细，味郁香，是汤、饮中的佐料，多用于做凉拌菜佐料，或烫料、面类菜中提味用。药用价值：起表出体外又可开胃消郁还可止痛解毒，《本草纲目》称“芫荽性味辛温香窜，内通心脾，外达四肢”。</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>香菜</h3><h3>
+						<p>Coriandrum sativum</p>
+					</h3></div>
+				</div>
+				<div class="banner-middle">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/suanrong.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>将蒜瓣先切成片，再用刀剁碎，约1/4小米大小或者更小，然后用色拉油小火炒熟，叫蒜蓉。蒜蓉就是取整粒大蒜放入蒜臼中捣碎，然后用色拉油小火炒熟，炒出香味。</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>蒜蓉</h3><h3>
+						<p>minced garlic</p>
+					</h3></div>
+				</div>
+				<div class="banner-right">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/cu.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>醋是调味品中常用的一个品类，醋又称为 食醋、醯、苦酒等，是烹饪中常用的一种液体酸味调味料。醋在中国菜的烹饪中有举足轻重的地位，常用于溜菜、凉拌菜等，西餐中常用于配制沙拉的调味酱或浸制酸菜，在火锅蘸料的地位不可动摇。</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>醋</h3><h3>
+						<p>vinegar</p>
+					</h3></div>
+				</div>
+				<div class="clearfix">
+			</div>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="banner">
+				<div class="banner-grid">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/zhimayou.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>芝麻油，又叫麻油 ，是从芝麻中提炼出来的，具有特别香味，故称为香油。 按榨取方法一般分为压榨法、压滤法和水代法，小磨香油为传统工艺水代法制作的香油。有浓郁的炒芝麻香味，其味纯正而耐回味。优质香油一般呈棕红色、橙黄或棕黄色，无混浊物质。芝麻香味浓郁，无异味</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>芝麻油</h3><h3>
+						<p>sesame oil</p>
+					</h3></div>
+				</div>
+				<div class="banner-middle">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/haoyou.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>蚝油是用蚝(牡蛎)熬制而成的调味料。蚝油是广东常用的传统的鲜味调料，也是调味汁类最大宗产品之一，它以素有"海底牛奶"之称的蚝牗牡蛎牍为原料，经煮熟取汁浓缩，加辅料精制而成。蚝油味道鲜美、蚝香浓郁，黏稠适度，营养价值高，亦是配制蚝油鲜菇牛肉、蚝油青菜、蚝油粉面等传统粤菜的主要配料</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>耗油</h3><h3>
+						<p>oyster sauce</p>
+					</h3></div>
+				</div>
+				<div class="banner-right">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/xiaomila.png" alt="加载中"/>
+							<div class="mask">
+								<span>小米辣，是双子叶植物纲、菊亚纲、茄目、茄科、辣椒属植物。小米辣可提升胃温，杀虫。用于胃寒，虫病。有的野菜小米辣也用于调味。新鲜野菜小米辣在我国云贵川等地较为常见，是蘸料常用的佐料</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>小米辣</h3><h3>
+						<p>Capsicum frutescens</p>
+					</h3></div>
+				</div>
+				<div class="clearfix"> </div>
+			    <br><br><br>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="banner">
+				<div class="banner-grid">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/huangdou.png" alt="加载中"/>
+							<div class="mask">
+								<span>黄豆含40%的蛋白质、20%的不饱和脂肪酸以及多种维生素及矿物质，每一公斤黄豆所含蛋白质相当于2.5公斤瘦肉，3公斤鸡肉和12公斤牛奶所含的蛋白质；黄豆的蛋白质的氨基酸组成与动物蛋白相似，接近人体需要的氨基酸比值，易被机体消化吸收，可以加强机体免疫力，增强体魄</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>黄豆</h3><h3>
+						<p>Glycine max (Linn.) Merr</p>
+					</h3></div>
+				</div>
+				<div class="banner-middle">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/qincai.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>芹菜性凉，味甘辛，无毒；入肝，胆，心包经。主治清热除烦，平肝，。主治高血压，头痛，头晕，暴热烦渴，黄疸，水肿，小便热涩不利，妇女月经不调，赤白带下.瘰疬.痄腮等病症。芹菜性凉质滑，故脾胃虚寒，肠滑不固者食之宜慎。它有大量的胶质性碳酸钙，易被人体吸收，可补充双腿所需钙质，还能预防下半身浮肿。</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>芹菜</h3><h3>
+						<p>Apium graveolens</p>
+					</h3></div>
+				</div>
+				<div class="banner-right">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/beef.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>牛肉含有丰富的蛋白质，氨基酸。其能提高机体抗病能力，对生长发育及手术后、病后调养 的人在补充失血和修复组织等方面特别适宜。中医食疗认为:寒冬食牛肉，有暖胃作用，为寒冬补益佳品。中医认为:牛肉有补中益气、滋养脾胃、强健筋骨、化痰息风、止渴止涎的功能。适用于中气下陷、气短体虚，筋骨酸软和贫血久病及面黄目眩之人食用。</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>牛肉粒</h3><h3>
+						<p>beef,hotpot,red meat</p>
+					</h3></div>
+				</div>
+				<div class="clearfix"> </div>
+			    <br><br><br>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="banner">
+				<div class="banner-grid">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/xianggujiang.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>香菇酱是以香菇为主要原料，再配以豆酱、大豆油、辣椒、花椒、芝麻、盐、香辛料等配料，利用菇类酱制技术酱制而成的即食调味品。香菇酱可以拌饭、拌面很方便，炒饭、炒菜味更香，是佐餐、烹饪的升级之选。</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>香菇酱</h3><h3>
+						<p>Mushroom sauce</p>
+					</h3></div>
+				</div>
+				<div class="banner-middle">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/xiangcong.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>葱促进消化吸收：葱还有刺激机体消化液分泌的作用，能够健脾开胃，增进食欲。可减少食物的腥味：动物性食品一般都存在腥味物质，尤其是水产品的气味突出。它随着食物新鲜度的降低而增强，这些异味物 质不仅使人反胃，而且食用后会对人体健康产生危害。烹调时去腥方法很多，可根据原料的异味程度。综合采用一些措施。以达到去腥臭味之目的</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>香葱</h3><h3>
+						<p>Chives</p>
+					</h3></div>
+				</div>
+				<div class="banner-right">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/jiangyou.png" alt="加载中"/>
+							<div class="mask">
+								<span>酱油是中国传统的调味品。用豆、麦、麸皮酿造的液体调味品。色泽红褐色，有独特酱香，滋味鲜美，有助于促进食欲。</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>酱油</h3><h3>
+						<p>soy sauce</p>
+					</h3></div>
+				</div>
+				<div class="clearfix"> </div>
+			    <br><br><br>
+		</div>
+	</div>	
+	<div class="container1">
+		<div class="banner">
+				<div class="banner-grid">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/jiucai.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>韭花食之能生津开胃，增强食欲，促进消化。 韭花富含钙、磷、铁、胡萝卜素、核黄素、抗坏血酸等有益健康的成分</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>韭菜花</h3><h3>
+						<p>leek flower</p>
+					</h3></div>
+				</div>
+				<div class="banner-middle">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/huasheng.png" alt="加载中"/>
+							<div class="mask">
+								<span>花生果具有很高的营养价值，内含丰富的脂肪和蛋白质。花生中还含有丰富的维生素B2.PP、A、D、E，钙和铁等。并含有硫胺素、核黄素、尼克酸等多种维生素。矿物质含量也很丰富，特别是含有人体必须的氨基酸，有促进脑细胞发育，增强记忆的功能。</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>花生</h3><h3>
+						<p>Arachis hypogaea Linn</p>
+					</h3></div>
+				</div>
+				<div class="banner-right">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/shacha.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>沙茶酱起源于马来语地区的潮汕华人饮食，后传至潮汕，盛行福建省、广东省等地的一种混合型调味品。色泽淡褐，呈糊酱状，具有大蒜、洋葱、花生米等特殊的复合香味、虾米和生抽的复合鲜咸味，以及轻微的甜、辣味</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>沙茶酱</h3><h3>
+						<p>Satay</p>
+					</h3></div>
+				</div>
+				<div class="clearfix"> </div>
+			    <br><br><br>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="banner">
+				<div class="banner-grid">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/furu.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>腐乳又称豆腐乳，是中国流传数千年的汉族传统民间美食，因其口感好、营养高，闻起来有股臭，吃起来特别的香味深受中国老百姓及东南亚地区人民的喜爱，是一道经久不衰的美味佳肴</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>腐乳</h3><h3>
+						<p>fermented bean curd</p>
+					</h3></div>
+				</div>
+				<div class="banner-middle">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/haixianzhi.jpg" alt="加载中"/>
+							<div class="mask">
+								<span>具有独特的提香、增鲜效果，并显原料本身的鲜味，适合炖、煨、煲等菜品制作，在火锅蘸料里用于提香非常合适</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>海鲜汁</h3><h3>
+						<p>Seafood juice</p>
+					</h3></div>
+				</div>
+				<div class="banner-right">
+					<div class="container">
+						<div class="imgbox">
+							<img src="images/dish/liaojiu.png" alt="加载中"/>
+							<div class="mask">
+								<span>"料酒"是烹饪用酒的称呼，添加黄酒酿制，其酒精浓度低，含量在15%以下，而酯类含量高，富含氨基酸。在烹制菜肴中使用广泛料酒的调味作用主要为去腥、增香。料酒的成分主要有黄酒、糖分、糊精、有机酸类、氨基酸、酯类、醛类、杂醇油及浸出物等。料酒可以增加食物的香味，去腥解腻，同时，它还富含多种人体必需的营养成分，甚至还可以减少烹饪对蔬菜中叶绿素的破坏</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-info">
+						<h3>料酒</h3><h3>
+						<p>cooking wine</p>
+					</h3></div>
+				</div>
+				<div class="clearfix"> </div>
+			    <br><br><br>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="clear">
+		<div id="poem1">
+			<ul>
+				<li>
+					<h2>There is no perfect dipping suace</h2>
+					<h2>only perfect dipping saucs</h2>
+					<h2>这世界上没有最好吃的一种蘸料</h2>
+					<h2>只有最好的几种不同的蘸料</h2>
+				</li>
+			</ul>
+		</div></div>
+	</div>
+		
+</body>
+</html>

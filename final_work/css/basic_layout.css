@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+		*, ::before, ::after {/*通配符对所有标签适用*/
+			box-sizing: border-box;
+		}
+		*{
+			margin: 0;/*外边距*/
+			padding: 0;/*内边距*/
+		}
+		.nav {/*导航栏*/
+			display: block;
+			padding: 10px 60px;/*上下填充，左右填充*/
+			padding-top: 0;
+			margin-left: 500px;/*距左边距的距离*/
+		}
+		.top_container {
+			display: flex;
+			position: relative;
+            margin: 0px auto;
+            background: rgb(44, 62, 80);
+            padding: 16px 0px;
+            width: 100%;
+            z-index: 10;/*优先级*/
+		}
+		.link_text {
+			color: rgba(255, 255, 255, 0.8);/*透明度0.8*/
+		}
+        .footer{
+			display: flex;
+			position: relative;
+            margin: 0px auto;
+            background: rgb(44, 62, 80);
+            padding: 16px 0px;
+            width: 100%;
+			height: 187px;
+            z-index: 10;/*优先级*/
+			
+        }
+
+		body{
+			color: #5B6F82;
+			font-size: 1rem;
+			font-family: "Lato", sans-serif;
+			hyphens: manual;/*英文跨越多行时只有存在建议换行符时才会换行*/
+			line-height: 1.2;/*给行内容设置高度范围*/
+		}
+		div {
+			display: block;
+		}
+		a {
+			color: #5B6F82;/*链接的字体颜色*/
+			text-decoration: underline;/*链接带下划线*/
+		}
+		ul {/*无序列表*/
+			list-style-type: none;
+		}
+		a:link,a:visited {/*未访问的，已访问的链接样式*/
+			display: block;
+			font-weight: bold;
+			color: #f4f7f7;
+			background-color: #7f9eb2;
+			box-shadow: 10px 10px 15px #f4f7f7;/*添加阴影*/
+			width: 200px;
+			padding: 10px;
+			text-align: center;/*文本对齐方式*/
+			text-decoration: none;
+			text-transform: uppercase;/*文本转换方式，此处大写*/
+		}
+		a:hover {/*鼠标悬停时的链接样式*/
+			background-color: #aacfd0;
+		}
+		a:active {/*鼠标点击时的链接样式*/
+			background-color: #79a8a9;
+		}
+		li {
+			float: left;/*左浮动*/
+		}
+
+		#words {
+			color: #79a8a9;
+			font-family: NSimSun;
+			background-color:  #2c3e50;
+		}
+		#poem {
+			margin-left: 700px;
+			text-align: center;
+			width: 370px;
+			height: 397px;
+			padding-top: 5px;
+			}
+		hr{
+			width:100%;
+			height:3px;
+			background-color:#1f4e5f ;
+			border: 0;
+			}
+.dropbtn {
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+	display: none
+
+}
+
+.dropdown-content a {
+
+}
+
+.dropdown-content a:hover {
+	
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+

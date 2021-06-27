@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+			float: left;
+        }
+
+        .imgbox {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+			/*float: left;*/
+        }
+
+        .imgbox img {
+            width: 500px;
+            height: 500px;
+            transition: transform 0.5s ease;/* 转换速度 */
+        }
+
+.imgbox .mask {/* 灰色阴影遮罩 */
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    background: rgba(44, 44, 44, 0.6);
+    color: #ffffff;
+    opacity: 0;
+    display: flex;
+    font-size: 13px;
+    /* 转换速度 */
+    transition: transform 0.5s ease;
+}
+
+.mask span {
+	margin: auto;
+	float: left
+}
+
+.imgbox:hover .mask {
+	opacity: 1;/* 增加元素的大小*/
+    -webkit-transform: scale(1.1, 1.1); /* Safari */
+    -ms-transform: scale(1.1, 1.1); /* IE 9 */
+    transform: scale(1.1, 1.1);
+}
+
+        .imgbox:hover img {
+            -webkit-transform: scale(1.1, 1.1);
+            /* Safari */
+            -ms-transform: scale(1.1, 1.1);
+            /* IE 9 */
+            transform: scale(1.1, 1.1);
+        }
+.container1 {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80% !important;
+	/*height: 80%;/*限定一手？*/
+ 
+        }
+
+.banner {
+	margin-bottom: 1em;
+        }
+.banner-grid {
+    background: #96C2F1;
+    min-height: 200px;
+    width: 33.33%;
+    float: left;
+    padding-top: 1em;
+}
+.banner-grid img {
+	width: 500px;
+    height: 500px;
+    transition: transform 0.5s ease;/* 转换速度 */
+}
+.banner-gri .mask {/* 灰色阴影遮罩 */
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    background: rgba(44, 44, 44, 0.6);
+    color: #ffffff;
+    opacity: 0;
+    display: flex;
+    font-size: 13px;
+    /* 转换速度 */
+    transition: transform 0.5s ease;
+}
+.banner-gri:hover .mask {
+	opacity: 1;/* 增加元素的大小*/
+    -webkit-transform: scale(1.1, 1.1);/* Safari */
+    -ms-transform: scale(1.1, 1.1);/* IE 9 */
+    transform: scale(1.1, 1.1);
+}
+.banner-gri:hover img {
+	-webkit-transform: scale(1.1, 1.1);/* Safari */
+    -ms-transform: scale(1.1, 1.1);/* IE 9 */
+    transform: scale(1.1, 1.1);
+}
+
+.banner-info {
+    padding: 1em;
+	margin: 0 auto;
+}
+.banner-middle {
+    background: #A5B6C8;
+	min-height: 200px;
+    width: 33.33%;
+    float: left;
+    padding-top: 1em;
+}
+.banner-right {
+    background: #CEE3E9;
+	min-height: 200px;
+    width: 33.33%;
+    float: left;
+    padding-top: 1em;
+}
+
+
+
+

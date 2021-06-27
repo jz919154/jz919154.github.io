@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.spikes { /*锯齿形网页分割线*/
+  position: relative;/*相对定位*/
+  background: #2c3e50;
+  height: 30vh;
+}
+
+.spikes::after {/*伪类，用于在元素后添加内容（CSS3语法）*/
+  content: '';
+  position: absolute;
+  right: 0;/*元素右边缘*/
+  left: -8%;/*向左偏50%，这处是想让锯齿的口子刚好对齐边缘*/
+  top: 100%;/*父元素边框外置顶*/
+  z-index: 10;/*堆叠优先级为10，很高保证可以覆盖其他元素*/
+  display: block;/*块级元素*/
+  height: 100px;
+  background-size: 150px 100%;
+  background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%), linear-gradient(225deg, #2c3e50 25%, transparent 25%);/*利用渐变色来形成锯齿区域*/
+  background-position: 0 0;/*前一个为水平值，后一个为垂直位置，此处为左上角*/
+
+}
